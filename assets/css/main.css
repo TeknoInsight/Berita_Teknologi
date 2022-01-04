@@ -1597,29 +1597,49 @@ button,
     padding-top: 0; }
 
 /* Features */
-.features{
-  margin: auto;
-  border: 1px solid red;
-
+.features .article{
+  margin-right: 30%;
+  margin-top: 0px;
 }
 
 .features article{
-  margin: auto;
-  margin-right: 30%;
-  display: flex;
+  border-bottom: 1px solid #7f888f ;
   margin-bottom: 20px;
-  border: 1px solid blue;
+  height: 5cm;
+  width: 100%;
+  overflow: hidden;
 }
 
-.features .content{
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: -20px;
+.content h3 {
+  margin: 10px;
 }
+
+.content p {
+  margin: 10px;
+}
+
 
 .features img {
-  width: 50%;
-  height: 50%;
+  float: right ;
+  width: 27%;
+  height: 70%;
+  margin: 10px;
+}
+
+/* Event */
+.features header{
+  border-bottom: 1px solid #f45c5c;
+}
+.features .event {
+  float: right;
+  margin-top: -16.5cm;
+  margin-right: 0px;
+}
+.features .event ul li{
+  list-style: decimal;
+}
+.event ul li i{
+  margin: 10px;
 }
 
 
@@ -1972,33 +1992,36 @@ button,
 
 /* Header */
 #header {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   border-bottom: solid 5px #f56a6a;
-  padding: 6em 0 1em 0;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  align-items: center;
+
   position: relative; }
   #header > * {
     -moz-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1;
+    flex: 0;
     margin-bottom: 0; }
-  #header .logo {
-    position: absolute;
-    left: 250px;
+  #header .login {
+    flex: 1;
     border-bottom: 0;
     color: inherit;
     font-family: "Roboto Slab", serif;
-    font-size: 1.125em; }
-  #header .tekno{
-    position: absolute;
-    top: 1.9cm;
-    height: 75px;
+    font-size: 1.0125em; }
+
+  #header .logo{
+    padding: 10px;
+  }
+  #header img{
+    height: 40px;
   }
   #header .icons {
-    text-align: right; }
+    display: flex;
+    }
+  
   @media screen and (max-width: 1680px) {
     #header {
       padding-top: 5em; } }
@@ -2180,12 +2203,15 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-.fa-home{
-  color: #f67878;
-}
-
-.tekno{
-  margin-bottom: -10;
-}
-
+  #menu ul li i {
+    float: left;
+    position: relative;
+    margin-left: 0px;
+    color: #f56a6a;
+    align-items: center;
+    padding-top: 6px;
+    margin-right: 10px;
+    font-size: x-large;
+    padding-top: inherit;
+  }
 
