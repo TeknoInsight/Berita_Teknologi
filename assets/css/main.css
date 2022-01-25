@@ -1625,6 +1625,11 @@ button,
   height: 70%;
   margin: 10px;
 }
+@media screen and (max-width: 480px){ 
+  .feature div{
+    display: block;
+  }
+}
 
 /* Event */
 .features header{
@@ -1640,6 +1645,11 @@ button,
 }
 .event ul li i{
   margin: 10px;
+}
+@media screen and (max-width: 480px){ 
+  .feature .event{
+    display: block;
+  }
 }
 
 
@@ -2212,6 +2222,253 @@ button,
     padding-top: 6px;
     margin-right: 10px;
     font-size: x-large;
-    padding-top: inherit;
+  }
+  #banner {
+    animation: transitionIn 0.75s;
+  }
+  #berita{
+    animation: transitionsIn 0.75s;
+  }
+  #article{
+    animation: transitionIn 0.75s;
+  }
+  #sidebar{
+    animation: transitionsIn 0.75s;
+  }
+  #contact{
+    animation: transitionsIn 0.75s;
   }
 
+  @keyframes transitionIn {
+    from{
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+.posts article h3{
+  font-weight: 500;
+}
+/* Article */
+.topik-terbaru h3{
+  width: 4.5cm;
+  border-bottom: 2px solid #3d4449;
+}
+
+.topik-populer h3{
+  margin-top: 80px;
+  width: 3.3cm;
+  border-bottom: 2px solid #3d4449;
+}
+
+.topik-lainnya h3{
+  margin-top: 80px;
+  width: 2.5cm;
+  border-bottom: 2px solid #3d4449;
+}
+
+
+
+/* Tutorial */
+.head-tutor{
+  background-color: #C0D8C0;
+  height: 12cm;
+}
+
+.head-tutor h2{
+  margin-left:  3cm;
+  padding-top: 4cm;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.head-tutor p{
+  color: #3d4449;
+  margin-left: 3cm;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.logo-tutor img{
+  float: right;
+  height: 10cm;
+  width: 10cm;
+  margin-right: 4cm;
+  margin-top: 1cm;
+}
+
+.posts-block{
+  background-color: #D3DEDC;
+  padding: 20px 25% 10px 10px;
+}
+
+.posts-block article{
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 20px;
+  height: 5cm;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.posts-block img{
+  float: right;
+  height: 3.5cm;
+  width: 3cm;
+}
+
+/* diskusi */
+.container{
+  padding: 0;
+  margin: 0;
+  height: 54cm;
+  width: 100%;
+  background-color: #cbcccc;
+  border-radius: 10px;
+}
+/* bagian kiri */
+
+.kiri{
+  height: auto;
+  width: 20%;
+  float: left;
+}
+.kiri .tutorial{
+
+  height: auto;
+  margin: 10px 10px 10px 0px;
+  list-style: none;
+}
+
+.kiri  .tutorial > h3{
+  border-bottom: 2px solid salmon;
+  text-align: center;
+  width: 50%;
+
+}
+.kiri .tutorial li{
+  background-color: #ffffff;
+  padding: 10px;
+  border: 2px solid #3d4449;
+}
+
+.kiri .kategori h3{
+  width: 50%;
+  text-align: center;
+  border-bottom: 2px solid salmon;
+}
+
+.kiri .kategori{
+  height: auto;
+  margin: 0px 10px 10px 0px;
+  list-style: none;
+}
+
+.kiri .kategori li{
+  background-color: #ffffff;
+  padding: 10px;
+  border: 2px solid #3d4449;
+
+} 
+.kiri li:hover{
+  background-color: white;
+  cursor: pointer;
+}
+.kiri i{
+  font-size:  xx-large; 
+  display: block;
+  justify-content: center;
+}
+.kiri > ul li a p{
+  display: contents;
+  font-weight: bold;
+  font-size: 23px;
+
+}
+.kiri ul li a{
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: bold;
+  color: #3d4449;
+  font-size: 20px;
+}
+
+/* Bagian tengah */
+
+.tengah{   
+  height: auto;
+  width: 60%;
+  float: left;
+  margin-top: 55px;
+}
+.tengah .content{
+  border: 2px solid #3d4449;
+  margin: 10px;
+  background-color: white;
+}
+.tengah .profile img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.tengah .profile h4{
+  display: inline;
+  position: absolute;
+  margin-top: .8cm;
+}
+.tengah .profile p{
+  display: inline;
+  position: absolute;
+  margin-top: 1.5cm;
+  margin-left: 0px;
+  font-weight: 600;
+  color: #3d4449;
+}
+
+.postingan img{
+  margin-top: 0cm;
+  width: 100%;
+  height: 10cm;
+}
+.tengah .action ul {
+  margin: 1px;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  color: #0000008c;
+  font-size: x-large;
+  margin-left: -20px;
+  font-size: 15px ;
+  margin-left: 15px;
+}
+.tengah .action ul .share{
+  margin-left: 9.5cm;  
+}
+
+.tengah .action ul li{
+  cursor: pointer;
+  
+}
+
+.tengah .description{
+  margin: 10px 20px 10px 20px;
+  font-weight: 800;
+  color: #3d4449;
+  font-size: 20px;
+}
+
+/* bagian kanan */
+.kanan{
+  height:100px;
+  width: 20%;
+  float: left;
+  margin-top: px;
+}
